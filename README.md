@@ -11,7 +11,7 @@ git clone https://github.com/danyadanyaa/stripe_api.git
 cd stripe_api/docker-compose
 ```
 
-#### Создайте файл .env в директории infra/ и добавьте переменные окружения:
+#### Создайте файл .env в директории docker-compose/ и добавьте переменные окружения:
 ```
 DJANGO_SECRET_KEY='Секретный ключ Django'
 STRIPE_PUBLISHABLE_KEY='Публичный ключ stripe'
