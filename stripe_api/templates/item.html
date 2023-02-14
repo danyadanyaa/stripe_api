@@ -1,0 +1,19 @@
+{% load static %}
+
+<html>
+  <head>
+    <title>Buy {{ item.name }}</title>
+    <script>
+      var page = '/buy/' + {{ item.pk }};
+    </script>
+    <script src="https://js.stripe.com/v3/"></script>  <!-- new -->
+    <script src="{% static 'item/main.js' %}"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
+  </head>
+  <body>
+    <h1>{{ item.name }}</h1>
+    <p>{{ item.description }}</p>
+    <p>{{ item.price }} {{ item.currency }}</p>
+    <button id="submitBtn">Purchase!</button>
+  </body>
+</html>
