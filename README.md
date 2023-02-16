@@ -44,5 +44,5 @@ docker-compose exec web python manage.py createsuperuser
 ```
 #### Выполните импорт данных в базу данных:
 ```
-docker-compose exec web python manage.py loaddata fistures.json
+docker-compose exec web python manage.py loaddata fixtures.json
 ```
